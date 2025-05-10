@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['GET'])
 def verify():
     # Replace with your actual token
-    verify_token = 'IGAAbaFKC59yxBZAE9IV1MtdEFOLXEwaTRySGlMeWJzYXVmRHE2UnQ3R2ZAFMlRaYk5sYTFnTG1jMHVRYmhaZAmk2MWxKb09GVktwZAlFudjBXSFVYeE15dS1Odmp0TlFxSDg3eFJDR2VOcUNfalBFNHRlR2dVX3l4Smw0UVpIRkdQWQZDZD'
+    verify_token = 'EAAKDKm8ZCqGkBOwXRA8kNZC9LPNBipHiR3pFS1pejxpjmBbWeCMlaoIjXODEaIyJA3FXQo5ubQWs0eUupz1kk3cZBcyQniS4OtxLhu0a5Xq2KOPiPraZAITy6sUdS7xJgWO95QUbmgelb0plmmJxv7tj0E7385KnjyxgHyewZBQcPYRyZCjBA0fY9ChTkCTVa0kTSU4DVOkFewbZAJmuDgGIn1ZBkgZDZD'
 
     # Verify the token and respond with challenge
     if request.args.get('hub.verify_token') == verify_token:
